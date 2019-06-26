@@ -10,6 +10,11 @@ Checks if substrings are under minimum occurrences in a string.
 
 https://www.npmjs.com/package/@pelevesque/are-substrings-under-minimum-occurrences
 
+@related:  
+https://github.com/pelevesque/are-substrings-over-maximum-occurrences  
+https://github.com/pelevesque/are-substrings-under-minimum-density  
+https://github.com/pelevesque/are-substrings-over-maximum-density  
+
 ## Installation
 
 `npm install @pelevesque/are-substrings-under-minimum-occurrences`
