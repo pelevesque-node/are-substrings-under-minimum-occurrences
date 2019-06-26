@@ -4,7 +4,7 @@
 
 # are-substrings-under-minimum-occurrences
 
-Checks if substrings occur under a minimum number of times in a string.
+Checks if substrings are under minimum occurrences in a string.
 
 ## Node Repository
 

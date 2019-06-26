@@ -1,7 +1,7 @@
 {
   "name": "@pelevesque/are-substrings-under-minimum-occurrences",
   "version": "0.0.1",
-  "description": "Checks if substrings occur under a minimum number of times in a string.",
+  "description": "Checks if substrings are under minimum occurrences in a string.",
   "main": "index.js",
   "engines": {
     "node": ">=7.5.0"
