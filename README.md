@@ -44,7 +44,7 @@ const areSubstringsUnderMinimumOccurrences = require('@pelevesque/are-substrings
 // under occurrences returns true
 // 'a' has 4 occurrences, less than 8
 const str = 'aaaabbbb'
-const checks = { 'a': 8 }
+const checks = { a: 8 }
 const result = areSubstringsUnderMinimumOccurrences(str, checks)
 // result === true
 ```
@@ -52,7 +52,7 @@ const result = areSubstringsUnderMinimumOccurrences(str, checks)
 ```js
 // equal to occurrences returns false
 const str = 'aaaabbbb'
-const checks = { 'a': 4 }
+const checks = { a: 4 }
 const result = areSubstringsUnderMinimumOccurrences(str, checks)
 // result === false
 ```
@@ -60,7 +60,7 @@ const result = areSubstringsUnderMinimumOccurrences(str, checks)
 ```js
 // over occurrences returns false
 const str = 'a man, a hog, and another hog'
-const checks = { 'hog': 1 }
+const checks = { hog: 1 }
 const result = areSubstringsUnderMinimumOccurrences(str, checks)
 // result === false
 ```
@@ -70,7 +70,7 @@ const result = areSubstringsUnderMinimumOccurrences(str, checks)
 ```js
 // when one is under occurrences, it returns true ('a' is under 8)
 const str = 'aaaabbbb'
-const checks = { 'a': 8, 'b': 4 }
+const checks = { a: 8, b: 4 }
 const result = areSubstringsUnderMinimumOccurrences(str, checks)
 // result === true
 ```
@@ -78,7 +78,7 @@ const result = areSubstringsUnderMinimumOccurrences(str, checks)
 ```js
 // when all are over or equal to occurrences, it returns false
 const str = 'a man, a hog, and another hog'
-const checks = { 'a': 1, 'hog': 1 }
+const checks = { a: 1, hog: 1 }
 const result = areSubstringsUnderMinimumOccurrences(str, checks)
 // result === false
 ```

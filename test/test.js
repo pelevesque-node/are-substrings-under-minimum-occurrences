@@ -16,7 +16,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return false with a check with minimum === 0', () => {
       const str = ''
-      const checks = { 'a': 0 }
+      const checks = { a: 0 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
       expect(result).to.equal(expected)
@@ -24,7 +24,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return true with a check with minimum > 0', () => {
       const str = ''
-      const checks = { 'a': 1 }
+      const checks = { a: 1 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
       expect(result).to.equal(expected)
@@ -34,7 +34,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
   describe('single character substring', () => {
     it('should return true when under minimum', () => {
       const str = 'aaaabbbb'
-      const checks = { 'a': 8 }
+      const checks = { a: 8 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
       expect(result).to.equal(expected)
@@ -42,7 +42,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return false when equal to minimum', () => {
       const str = 'aaaabbbb'
-      const checks = { 'a': 4 }
+      const checks = { a: 4 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
       expect(result).to.equal(expected)
@@ -50,7 +50,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return false when over minimum', () => {
       const str = 'aaaabbbb'
-      const checks = { 'a': 1 }
+      const checks = { a: 1 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
       expect(result).to.equal(expected)
@@ -60,7 +60,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
   describe('multi character substring', () => {
     it('should return true when under minimum', () => {
       const str = 'aaaabbbbaaaabbbb'
-      const checks = { 'aaaa': 8 }
+      const checks = { aaaa: 8 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
       expect(result).to.equal(expected)
@@ -68,7 +68,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return false when equal to minimum', () => {
       const str = 'aaaabbbbaaaabbbb'
-      const checks = { 'aaaa': 2 }
+      const checks = { aaaa: 2 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
       expect(result).to.equal(expected)
@@ -76,7 +76,7 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
 
     it('should return false when over minimum', () => {
       const str = 'aaaabbbbaaaabbbb'
-      const checks = { 'aaaa': 1 }
+      const checks = { aaaa: 1 }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
       expect(result).to.equal(expected)
@@ -87,9 +87,9 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return true with many under minimum', () => {
       const str = 'aaaabbbbccccdddd'
       const checks = {
-        'a': 8,
-        'b': 8,
-        'c': 8
+        a: 8,
+        b: 8,
+        c: 8
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
@@ -99,9 +99,9 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return true with some under minimum', () => {
       const str = 'aaaabbbbccccdddd'
       const checks = {
-        'a': 1,
-        'b': 8,
-        'c': 1
+        a: 1,
+        b: 8,
+        c: 1
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
@@ -111,10 +111,10 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return false with many equal to minimum', () => {
       const str = 'aaaabbbbccccdddd'
       const checks = {
-        'a': 4,
-        'b': 4,
-        'c': 4,
-        'd': 4
+        a: 4,
+        b: 4,
+        c: 4,
+        d: 4
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
@@ -124,10 +124,10 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return false with many over minimum', () => {
       const str = 'aaaabbbbccccdddd'
       const checks = {
-        'a': 1,
-        'b': 1,
-        'c': 1,
-        'd': 1
+        a: 1,
+        b: 1,
+        c: 1,
+        d: 1
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
@@ -139,9 +139,9 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return true with many under minimum', () => {
       const str = 'aaaabbbbccccddddaaaabbbbccccdddd'
       const checks = {
-        'aaaa': 8,
-        'bbbb': 8,
-        'cccc': 8
+        aaaa: 8,
+        bbbb: 8,
+        cccc: 8
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
@@ -151,9 +151,9 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return true with some under minimum', () => {
       const str = 'aaaabbbbccccddddaaaabbbbccccdddd'
       const checks = {
-        'aaaa': 1,
-        'bbbb': 8,
-        'cccc': 1
+        aaaa: 1,
+        bbbb: 8,
+        cccc: 1
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = true
@@ -163,10 +163,10 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return false with many equal to minimum', () => {
       const str = 'aaaabbbbccccddddaaaabbbbccccdddd'
       const checks = {
-        'aaaa': 2,
-        'bbbb': 2,
-        'cccc': 2,
-        'dddd': 2
+        aaaa: 2,
+        bbbb: 2,
+        cccc: 2,
+        dddd: 2
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
@@ -176,10 +176,10 @@ describe('#areSubstringsUnderMinimumOccurrences()', () => {
     it('should return false with many over minimum', () => {
       const str = 'aaaabbbbccccddddaaaabbbbccccdddd'
       const checks = {
-        'aaaa': 1,
-        'bbbb': 1,
-        'cccc': 1,
-        'dddd': 1
+        aaaa: 1,
+        bbbb: 1,
+        cccc: 1,
+        dddd: 1
       }
       const result = areSubstringsUnderMinimumOccurrences(str, checks)
       const expected = false
